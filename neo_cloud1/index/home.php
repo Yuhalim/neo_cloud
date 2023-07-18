@@ -4,7 +4,7 @@ $comment = "";
 if(isset($_POST['register'])){
     $check = mysqli_query($conn, "SELECT * FROM db_table WHERE email='{$_POST['email']}'");
     if($_POST['fname']=="" || $_POST['lname']=="" || $_POST['user']=="" || $_POST['age']=="" || $_POST['email']=="" || $_POST['pass']=="" || $_POST['conf']=="" || $_POST['state']==""){
-        $comment = "Please fill out all the fields";
+        $comment = "Please fill out all fields";
     }
     elseif(mysqli_num_rows($check)>0){
         $comment = 'this user already exists';

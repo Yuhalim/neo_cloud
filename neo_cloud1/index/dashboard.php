@@ -2,7 +2,6 @@
 session_start();
 
 include('config.php');
-include('login.php');
 include('home.php');
 if(isset($_POST['logout'])){
     header('Location:logout.php');

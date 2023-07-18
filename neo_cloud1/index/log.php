@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 include_once('login.php');
-$message = "";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ $message = "";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="form" action="login.php" method="post">
+    <form class="form" method="post">
         <input type="text" name="email" placeholder="Enter your email" class="input">
         <br><br>
         <input type="password" name="pass" placeholder="Enter your password" class="input">
